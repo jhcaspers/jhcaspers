@@ -1,0 +1,73 @@
+/**
+ *  Mini Sudoku game
+ * Copyright 2020 Jan-Hendrik Caspers
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+ *
+ * */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+td.digit {
+    width: 40px;
+    height: 40px;
+    max-width: 40px;
+    max-height: 40px;
+    min-width: 40px;
+    min-height: 40px;
+    text-align: center;
+    vertical-align: center;
+    border: 1px solid gray;
+}
+
+table {
+    border: 1px solid black;
+    border-spacing: 0;
+}
+
+.pagewrapper {
+    padding: 40px;
+}
+
+.tdSelected {
+    background-color: bisque;
+}
+
+.victory {
+    background-color: aquamarine;
+}
+
+.floating-text {
+    transform: translateY(0);
+    font-size: 80px;
+    animation: fl1 3s infinite linear;
+    position:absolute;
+    left: 40px;
+    top: 150px;
+    color: cadetblue;
+    text-shadow: 5px 5px 10px red;
+    text-transform: uppercase;
+    display: none;
+
+}
+
+
+@keyframes fl1 {
+    30% {
+        transform: translateY(10%) rotate(4deg);
+    }
+    70% {
+        transform: translateY(10%) rotate(-4deg);
+    }
+
+}
